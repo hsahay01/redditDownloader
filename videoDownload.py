@@ -16,7 +16,7 @@ if reddit_url:
 
     json_response = requests.get(json_url, headers=headers)
 
-    #st.write(json_response)
+    st.write(json_response)
     if json_response.status_code != 200:
         st.warning("Incorrect URL!")
     else:
